@@ -1,0 +1,61 @@
+% Usage example, adopted from https://www.overleaf.com/learn/latex/Beamer
+
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Tufts}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[sfdefault]{roboto}
+
+\title[Beamer example] %optional
+{About the Beamer class in presentation making}
+
+\subtitle{A short story}
+
+\author[Arthur, Doe] % (optional, for multiple authors)
+{A.~B.~Arthur\inst{1} \and J.~Doe\inst{2}}
+
+\institute[VFU] % (optional)
+{
+  \inst{1}%
+  Department of Computer Science\\
+  Tufts University
+  \and
+  \inst{2}%
+  Department of Engineering\\
+  Very Famous University
+}
+
+\date[VLC 2025] % (optional)
+{Very Large Conference, April 2025}
+
+%\logo{\includegraphics[height=1cm]{overleaf-logo}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{Intro}
+\begin{frame}{Background}
+  \begin{itemize}
+    \item Foo
+    \item Bar
+    \item Foo-Bar!
+  \end{itemize}
+\end{frame}
+
+\section{Conclusions}
+
+\begin{frame}{Last Slide}
+  That's all!
+\end{frame}
+
+\end{document}

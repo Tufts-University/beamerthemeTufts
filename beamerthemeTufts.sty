@@ -1,0 +1,48 @@
+\ProvidesPackage{beamerthemeTufts}
+
+\mode<presentation>
+
+  %—— Base themes ——
+  \useinnertheme[shadow=true]{rounded}
+  \useoutertheme{infolines}
+  \usecolortheme{beaver}
+
+  % —— Tufts blue (digital)  ——
+  % https://brand.tufts.edu/guidelines/color
+  \definecolor{tuftsblue}{RGB}{49,114,174}
+
+  % —— Tufts Logo on the title page ——
+  % https://brand.tufts.edu/creative-assets
+  % adjust height/placement as you like
+  \titlegraphic{%
+    \vspace{-0.4cm}
+    \includegraphics[height=1cm]{Tufts_univ_blue.pdf}%
+  }
+
+  %—— Title‑page (title & section headings) in white ——
+  \setbeamercolor{title}{fg=white}
+  \setbeamercolor{titlelike}{fg=white}
+
+  %—— Frame titles in blue on white ——
+  \setbeamercolor{frametitle}{fg=tuftsblue,bg=white}
+
+  %—— Palettes ——
+  \setbeamercolor{palette primary}   {fg=white, bg=tuftsblue}
+  \setbeamercolor{palette secondary} {fg=white, bg=tuftsblue!75!black}
+  \setbeamercolor{palette tertiary}  {fg=white, bg=tuftsblue!50!black}
+  \setbeamercolor{palette quaternary}{fg=white, bg=tuftsblue!25!black}
+
+  %—— Blocks ——
+  \setbeamercolor{block title}         {fg=white, bg=tuftsblue}
+  \setbeamercolor{block title alerted} {fg=white, bg=tuftsblue}
+  \setbeamercolor{alerted text}        {fg=tuftsblue}
+
+  %—— Items ——
+  \setbeamercolor{item projected}      {fg=white, bg=tuftsblue}
+  \setbeamercolor{enumerate item}      {fg=tuftsblue}
+  \setbeamercolor{itemize item}        {fg=tuftsblue}
+
+  %—— Keep block titles at normal size ——
+  \setbeamerfont{block title}{size={}}
+
+\mode<all>
