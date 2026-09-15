@@ -11,17 +11,28 @@
   % https://brand.tufts.edu/guidelines/color
   \definecolor{tuftsblue}{RGB}{49,114,174}
 
-  % —— Tufts Logo on the title page ——
+  % —— Tufts Logo at the bottom of the title page ——
   % https://brand.tufts.edu/creative-assets
-  % adjust height/placement as you like
-  \titlegraphic{%
-    \vspace{-0.4cm}
-    \includegraphics[height=1cm]{Tufts_univ_blue.pdf}%
+  % The logo follows the title block, pushed to the bottom of the frame by
+  % filll glue that outranks the frame's own centring glue, so the title block
+  % is centred in the space above it. On a crowded title page the gap above the
+  % logo shrinks (by up to 0.5cm) instead of the logo overlapping the text.
+  % Adjust height as you like.
+  \addtobeamertemplate{title page}{%
+    \vskip 0pt plus 1filll
+  }{%
+    \vskip 0pt plus 1filll minus 0.5cm
+    {\centering\includegraphics[height=1cm]{Tufts_univ_blue.pdf}\par}%
+    \vskip 0.25cm% keep the logo clear of the footline
   }
 
   %—— Title‑page (title & section headings) in white ——
   \setbeamercolor{title}{fg=white}
   \setbeamercolor{titlelike}{fg=white}
+
+  %—— Subtitle (\subtitle{...}): in the title box, one size below the title ——
+  \setbeamercolor{subtitle}{fg=white}
+  \setbeamerfont{subtitle}{size=\large}
 
   %—— Frame titles in blue on white ——
   \setbeamercolor{frametitle}{fg=tuftsblue,bg=white}

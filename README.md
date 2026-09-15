@@ -36,9 +36,10 @@ To use the theme in your LaTeX presentation, add the following to your preamble:
 ## Features
 
 - **Colour Scheme**: Uses the official Tufts blue (RGB: 49,114,174)
-- **Logo**: Automatically includes the Tufts University logo on the title page
+- **Logo**: Automatically places the Tufts University logo at the bottom of the title page, below the title block
 - **Typography**: 
   - White text on blue backgrounds for titles
+  - Optional `\subtitle{...}` shown in the title box, one size smaller than the title
   - Blue text on white backgrounds for frame titles
   - Consistent item and block styling
 - **Layout**: 
