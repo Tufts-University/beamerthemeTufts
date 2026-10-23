@@ -44,7 +44,7 @@ To use the theme in your LaTeX presentation, add the following to your preamble:
   - Consistent item and block styling
 - **Layout**: 
   - Rounded inner theme with shadow
-  - Infoframes outer theme
+  - Infolines outer theme
   - Beaver colour theme as base
 
 ## Example
